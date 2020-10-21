@@ -1,4 +1,6 @@
 # This module implements a in order to implement iterative dfs and different uses
+# Implementing a stack is a nice way to practice OOP in python
+# Programmer : Dor Bitton
 
 class Node:
     def __init__(self, value):
