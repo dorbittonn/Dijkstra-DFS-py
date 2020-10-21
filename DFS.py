@@ -37,9 +37,8 @@ def iterative_dfs(graph, node):
             visited[nd] = True
             stk.push(nd)
             helper(graph, node, visited, stk)
-            ## that envelope function helps us to get to every node even if the graph is a forest
 
-
+## that envelope function helps us to get to every node even if the graph is a forest
 def helper(graph, node, visited, stk):
     while not stk.isEmpty():
         curr = stk.Top()
