@@ -30,7 +30,7 @@ ABC = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J',
 def iterative_dfs(graph, node):
     print("Starting Iterative DFS traversal")
     stk = Stack()
-    # a little bit practise of dictionary comperhension
+    # a little bit practice of dictionary comperhension
     visited = {elem: False for elem in graph}
     for nd in graph:
         if not visited[nd]:
