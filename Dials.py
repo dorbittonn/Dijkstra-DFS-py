@@ -29,7 +29,6 @@ def Dials_algo(src, weights):
     Buckets[0].append(src)
     for node in nodes[1:]:
         Buckets[wV].append(node)
-    print(Buckets)
 
     while 1:
         # Scan the buckets until you find a non empty one
