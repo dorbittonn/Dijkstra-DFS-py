@@ -4,7 +4,6 @@
 # of course this algorithm does better only if the weights are relatively small.
 # Programmer : Dor Bitton
 
-# we generate wV buckets, the k'th bucket contains all temporarily labels nodes with distance equal to k.
 
 
 def Dials_algo(src, weights):
@@ -23,7 +22,9 @@ def Dials_algo(src, weights):
     nodes = [x for x in weights]
     dist = {src: 0}
     dist.update({x: INF for x in nodes if x != src})
-    print(dist)
+
+    
+    # we generate wV buckets, the k'th bucket contains all temporarily labels nodes with distance equal to k.
     # The Bucket[wV] is the Infinity Bucket , where all the nodes starts from except the source.
     wV = maxval * V
     Buckets[0].append(src)
